@@ -7,3 +7,5 @@ alias be='bundle exec'
 alias docker-ips="docker ps -q | xargs -n 1 docker inspect --format '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}} {{ .Name }}' | sed 's/ \// /'"
 alias youtube-dl-audio='youtube-dl -x --audio-format mp3 --audio-quality 0 --prefer-ffmpeg -f 140'
 alias workspace='cd ~/Workspace'
+alias git-personal="GIT_SSH_COMMAND='ssh -i ~/.ssh/id_rsa_personal' git"
+
